@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="025dc86b-56b0-45bb-9b66-8bc8603640e0" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ToDoItem.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ToDoList.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AuthenticationService.java" afterDir="false" />
+>>>>>>> authentication
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
@@ -37,16 +41,23 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "list-operations",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/dal/To-Do-List-App",
     "run.code.analysis.last.selected.profile": "pProject Default"
+=======
+    "git-widget-placeholder": "authentication",
+    "kotlin-language-version-configured": "true"
+>>>>>>> authentication
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

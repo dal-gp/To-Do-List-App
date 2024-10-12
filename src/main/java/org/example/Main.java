@@ -4,25 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    private static ArrayList<User> users = new ArrayList<User>();
-
-    private static IAuthenticationService authService = new IAuthenticationService() {
-
-        @Override
-        public User signUp(String username, String password) {
-            return null;
-        }
-
-        @Override
-        public User logIn(String username, String password) {
-            return users.get(0);
-        }
-    };
-
+    private static IAuthenticationService authService = new AuthenticationService();
     private static boolean isRunning = true;
 
     public static void main(String[] args) {
-        users.add(new User("test", "test"));
         while(isRunning) {
             showMenu();
         }
@@ -66,18 +51,19 @@ public class Main {
         } else {
             System.out.println("Something went wrong!");
         }
-
     }
 
     public static void onSignUp() {
-        System.out.println("Enter your username: ");
+        System.out.print("Enter your username: ");
         Scanner scanner = new Scanner(System.in);
         String username = scanner.nextLine();
-        System.out.println("Enter your password: ");
+        System.out.print("Enter your password: ");
         String password = scanner.nextLine();
         User user = authService.signUp(username, password);
         if(user != null) {
             System.out.println("Successfully signed-up!");
+        } else {
+            System.out.println("User " + username + " is already taken!");
         }
     }
 
