@@ -59,7 +59,14 @@ public class Main {
         System.out.print("Enter your password: ");
         String password = scanner.nextLine();
         User user = authService.logIn(username, password);
-        System.out.println("Welcome, " + user.getUsername() + "!");
+        if(user != null){
+            System.out.println("Welcome, " + user.getUsername() + "!");
+            ToDoList toDoList = new ToDoList(user);
+            toDoList.run();
+        } else {
+            System.out.println("Something went wrong!");
+        }
+
     }
 
     public static void onSignUp() {
